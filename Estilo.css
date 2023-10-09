@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: rgb(70, 97, 140);
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 150px;
+    padding: 5px;
+}
+
+.pForm {
+    font-weight: 100;
+    font-size: 13px;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+label {
+    display: flex;
+    height: 30px;
+    background-color: rgb(70 70 70 / 13%);
+    font-size: 13px;
+    padding: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+    height: 30px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+}
+
+.divSubTitle {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #e9e8e6;
+}
+
+.buttonList {
+    height: 26px;
+    width: 88px;
+    background-color: rgb(212, 62, 60);
+    color: white;
+    border: none;
+    margin-right: 15px;
+}
+
+.material-icons {
+    color: #ffffff;
+    font-size: 16px;
+    vertical-align: bottom;
+}
+
+.h1SubTitle {
+    color: rgb(70 70 70);
+    font-size: 20px;
+}
+
+.divSecondSubtitle {
+    width: 100%;
+    background-color: #acacac;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.secondSubtitle {
+    font-size: 18px;
+
+}
+
+.divAlert {
+    padding: 10px;
+    margin-right: auto;
+    background-color: #d4ce381c;
+    width: 99%;
+    margin-top: 15px;
+    height: 40px;
+    margin-left: auto;
+}
+
+#pAlert {
+    font-size: 13px;
+}
+
+form {
+    display: flex;
+    padding: 5px;
+}
+
+#form1 {
+    width: 25%;
+    padding: 10px;
+}
+
+#form2 {
+    width: 25%;
+    padding: 10px;
+}
+
+#form3 {
+    width: 25%;
+    padding: 10px;
+}
+
+#form4 {
+    width: 25%;
+    padding: 10px;
+}
+
+#divButtonFooter {
+    display: flex;
+    justify-content: flex-end;
+    padding: 14px;
+}
+
+button {
+
+    width: 70px;
+    height: 25px;
+    background-color: #2978ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#divFooter {
+    background-color: #e9e8e6;
+    height: 15px;
+}
+
+footer {
+    display: flex;
+    background-color: rgb(70, 97, 140);
+    width: 100%;
+    height: 48px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#pFooter {
+    font-weight: 400;
+    color: white;
+    font-size: 13px;
+}
+
+#divInvest {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+#labelInvest {
+    background-color: rgb(70 70 70 / 13%);
+    font-size: 13px;
+    padding: 5px;
+    width: fit-content;
+}
+
+#form1Invest {
+    width: 30%;
+    padding: 10px;
+}
+
+#form2Invest {
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#form3Invest {
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#form4Invest {
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 30%;
+    margin-left: -46px;
+}
+
+#divDados {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+}
+
+#pInvest {
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 9px;
+}
+
+#inputInvst {
+    width: 40%;
+    height: 30px;
+}
+
+#inputRateio {
+    width: 70%;
+    height: 30px;
+}
+
+#AddInvest {
+    width: 25%;
+    background-color: rgb(94, 183, 93)
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    font-weight: 400;
+    font-size: 15px;
+    text-align: inherit;
+    padding: 5px;
+}
+
+#divButtonFooterT2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#divButtonFooterVoltar {
+    background-color: rgb(30, 186, 165)
+}
+
+/* Estilo para linhas pares */
+tr.par {
+    background-color: rgb(70 70 70 / 13%);
+    /* Cinza */
+}
+
+/* Estilo para linhas ímpares */
+tr.impar {
+    background-color: #ffffff;
+    /* Branco */
+}

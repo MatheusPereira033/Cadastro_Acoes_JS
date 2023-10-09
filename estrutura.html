@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Estilo.CSS">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100;300;400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="./Index.js"></script>
+    <title>PharmaViews</title>
+</head>
+
+<body>
+    <div id="Page01" class="Page-Active">
+        <div class="header">
+            <header>
+                <i class="material-icons" style="color: #ffffff;
+                   ">menu</i>
+                <img src="./assets/logo.png">
+            </header>
+        </div>
+
+        <div class="divSubTitle">
+            <h1 class="h1SubTitle">Gestão Verbas - Nova Ação</h1>
+            <button class="buttonList"><i class="material-icons" style="color: #ffffff; font-size: 16px;
+                     vertical-align: bottom;">arrow_back</i>
+                Listagem
+            </button>
+        </div>
+        <div class="divSecondSubtitle">
+            <h2 class="secondSubtitle">Dados Cadastrais</h2>
+        </div>
+        <div class="divAlert">
+            <p id="pAlert">Neste passo é possível alterar as informações cadastrais</p>
+        </div>
+        <div>
+            <form>
+                <div id="form1">
+                    <p class="pForm">Cod ID</p>
+                    <label id="labelID"></label>
+                    <p class="pForm">Ação</p>
+                    <select>
+                        <option value="Coffee-Break">Coffee Break</option>
+                        <option value="Simpósio">Simpósio</option>
+                        <option value="Patrocínio">Patrocínio</option>
+                    </select>
+
+                </div>
+
+                <div id="form2">
+
+                    <p class="pForm">Data Cadastro</p>
+                    <label id="labelDataHora"></label>
+                    <p class="pForm">Tipo de pagamento</p>
+                    <select>
+                        <option value="Cartão-corporativo">Cartão corporativo</option>
+                        <option value="Faturado">Faturado</option>
+                    </select>
+
+                </div>
+
+                <div id="form3">
+                    <p class="pForm">Solicitante</p>
+                    <label id="labelUsuario">Mayara Livramento</label>
+                    <p class="pForm">Data Mínima da Ação</p>
+                    <label id="add10dias"></label>
+
+                </div>
+
+                <div id="form4">
+
+                    <p class="pForm">Executor</p>
+                    <select>
+                        <option value="Vivian-Cardoso">Vivian Cardoso</option>
+                        <option value="Matheus-Pereira">Matheus Pereira</option>
+                        <option value="Julio-Miranda">julio Miranda</option>
+                        <option value="Elder-Lopes">Elder Lopes</option>
+                    </select>
+
+                    <p class="pForm">Data Ação</p>
+                    <input id="dateAcao" type="date" onblur="validarDataAcao()">
+
+                </div>
+
+            </form>
+
+        </div>
+        <div id="divButtonFooter">
+            <button id="avancarButton" onclick="passarPagina()">Avançar<i class="material-icons" style="color: #ffffff; font-size: 16px;
+                    margin-left: 2px;
+                    vertical-align: bottom;">arrow_forward</i></button>
+        </div>
+        <div id="divFooter"></div>
+        <footer>
+            <p id="pFooter">@ 2023 PHARMAVIEWS. Todos os direitos reservados</p>
+            <i class="material-icons" style="color: #ffffff;
+                   ">keyboard_arrow_up</i>
+        </footer>
+
+    </div>
+
+    <div id="Page02" class="Page-Active" style="display: none;">
+
+        <div class="header">
+            <header>
+                <i class="material-icons" style="color: #ffffff;
+                   ">menu</i>
+                <img src="./assets/logo.png">
+            </header>
+        </div>
+
+        <div class="divSubTitle">
+            <h1 class="h1SubTitle">Gestão Verbas - Nova Ação</h1>
+            <button class="buttonList"><i class="material-icons" style="color: #ffffff; font-size: 16px;
+                 vertical-align: bottom;">arrow_back</i>Listagem</button>
+        </div>
+        <div class="divSecondSubtitle">
+            <h2 class="secondSubtitle">Produto/Investimento<h2>
+        </div>
+
+
+        <div class="divAlert">
+
+            <p id="pAlert">Neste passo, configure o valor do investimento previsto que será usado do rateio. Configure
+                também os
+                produtos pagador e alvo e a % do rateio.</p>
+        </div>
+
+        <form>
+
+            <div id="form1Invest">
+
+                <p id="pInvest">Investimento Previsto</p>
+                <div id="divInvest">
+                    <label id="labelInvest">R$</label>
+                    <input placeholder="Valor" id="inputInvst" type="number">
+                </div>
+                <p class="pForm">Produto Pagador</p>
+                <select>
+                    <option value="Produto-A">Produto A</option>
+                    <option value="Produto-B">Produto B</option>
+                    <option value="Produto-C">Produto C</option>
+                </select>
+            </div>
+            <div id="divDados">
+                <div id="form2Invest">
+                    <p class="pForm">Produto Alvo</p>
+                    <select>
+                        <option value="Produto-A">Produto A</option>
+                        <option value="Produto-B">Produto B</option>
+                        <option value="Produto-C">Produto C</option>
+                    </select>
+                </div>
+                <div id="form3Invest">
+                    <p class="pForm">Rateio</p>
+                    <input placeholder=" Porcentagem" id="inputRateio">
+                </div>
+
+                <div id="form4Invest">
+                    <p class="pForm">Investimento Previsto rateio</p>
+                    <label id="InvestPrev"></label>
+                </div>
+
+                <button type="button" id="AddInvest"><i class="material-icons" style="color: #ffffff;
+                font-size: 16px;
+                margin-left: 2px;
+                vertical-align: bottom;
+                    ">add</i>Adicionar</button>
+            </div>
+        </form>
+
+        <table border="1">
+            <tr>
+                <th>Produto Pagador</th>
+                <th>Produto Alvo</th>
+                <th>Rateio</th>
+                <th>Investimento Previsto rateio</th>
+                <th>Editar</th>
+                <th>Excluir</th>
+            </tr>
+            <tr>
+
+            </tr>
+
+        </table>
+        <div id="divButtonFooterT2">
+            <button id="divButtonFooterVoltar"><i class="material-icons" style="color: #ffffff; font-size: 16px;
+                vertical-align: bottom;">arrow_back</i>Voltar</button>
+
+            <button id="avancarButtonPag2" onclick="enviarForm()">Avançar<i class="material-icons" style="color: #ffffff; font-size: 16px;
+                margin-left: 2px;
+                vertical-align: bottom;">arrow_forward</i></button>
+
+        </div>
+        <div id="divFooter"></div>
+        <footer>
+            <p id="pFooter">@ 2023 PHARMAVIEWS. Todos os direitos reservados</p>
+            <i class="material-icons" style="color: #ffffff;
+                   ">keyboard_arrow_up</i>
+        </footer>
+
+    </div>
+
+
+</body>
+
+</html>
